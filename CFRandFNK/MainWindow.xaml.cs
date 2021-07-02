@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CFRandFNK
 {
@@ -27,7 +15,26 @@ namespace CFRandFNK
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            char[] cfrChar = CFR.Text.ToCharArray();
+            for (int i = 0; i < cfrChar.Length; i++)
+            {
+                if (cfrChar[i] == '.')
+                {
+                    cfrChar[i] = ',';
+                }
+            }
+            CFR.Text = new string(cfrChar);
             double cfr = Convert.ToDouble(CFR.Text);
+
+            char[] fnkChar = FNK.Text.ToCharArray();
+            for (int i = 0; i < fnkChar.Length; i++)
+            {
+                if (fnkChar[i] == '.')
+                {
+                    fnkChar[i] = ',';
+                }
+            }
+            FNK.Text = new string(fnkChar);
             double fnk = Convert.ToDouble(FNK.Text);
 
             double calc = (cfr * 0.03 + 10) / fnk;
