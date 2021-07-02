@@ -37,7 +37,7 @@ namespace CFRandFNK
             FNK.Text = new string(fnkChar);
             double fnk = Convert.ToDouble(FNK.Text);
 
-            double calc = (cfr * 0.03 + 10) / fnk;
+            double calc = (cfr - (cfr * 0.03 + 10)) / fnk;
 
             Result.Text = $"Вам пришло FNK по цене {calc:f5}";
         }
