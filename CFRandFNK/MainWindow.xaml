@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CFRandFNK"
         mc:Ignorable="d"
-        Title="FNK Calculator" Height="300" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="FNK Calculator" Height="380" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid Background="#FFAEAEAE">
         <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="14" FontFamily="Copperplate Gothic Bold"><Run FontSize="14" Text="Сколько CFR поставили на вывод:" /></TextBlock>
         <TextBox x:Name="CFR" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" BorderThickness="1" TextBlock.FontSize="14" TextBlock.FontFamily="Copperplate Gothic Bold" />
         <TextBlock HorizontalAlignment="Center" Margin="0,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontSize="14" FontFamily="Copperplate Gothic Bold"><Run FontSize="14" Text="Сколько FNK " /><Run FontSize="14" Language="ru-ru" Text="пришло" /><Run FontSize="14" Text=":" /></TextBlock>
         <TextBox x:Name="FNK" HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" BorderThickness="1" TextBlock.FontSize="14" TextBlock.FontFamily="Copperplate Gothic Bold" />
         <Button Content="Расчитать" HorizontalAlignment="Left" Margin="78,152,0,0" VerticalAlignment="Top" Height="50" Width="84" Click="Button_Click" TextBlock.FontSize="14" TextBlock.FontFamily="Copperplate Gothic Bold" />
-        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="10,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="220" FontSize="14" FontFamily="Copperplate Gothic Bold" />
+        <TextBlock x:Name="Result" HorizontalAlignment="Left" Margin="10,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="220" FontSize="14" FontFamily="Copperplate Gothic Bold" />
         <TextBlock HorizontalAlignment="Center" Margin="0,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" FontFamily="Arial" FontSize="10"><Run FontSize="14" Language="ru-ru" Text="числа пишите с запятой!" /></TextBlock>
+        <TextBlock x:Name="ResultMoney" HorizontalAlignment="Left" Margin="10,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="220" FontSize="14" FontFamily="Copperplate Gothic Bold" Foreground="Green"/>
     </Grid>
 </Window>

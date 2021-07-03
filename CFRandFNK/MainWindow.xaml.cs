@@ -40,6 +40,8 @@ namespace CFRandFNK
             double calc = (cfr - (cfr * 0.03 + 10)) / fnk;
 
             Result.Text = $"Вам пришло FNK по цене {calc:f5}";
+
+            ResultMoney.Text = $"Можете сказать спасибо, если не жалко:\n4048 0250 0071 1401";
         }
     }
 }
