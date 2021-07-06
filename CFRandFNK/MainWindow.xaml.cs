@@ -11,6 +11,10 @@ namespace CFRandFNK
         public MainWindow()
         {
             InitializeComponent();
+            Window1 window1 = new Window1();
+            window1.Activate();
+            window1.Show();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
